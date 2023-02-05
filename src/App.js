@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { useEffect } from 'react';
 import Header from './component/Header';
 import Subheader from './component/Subheader';
 import Counter from './component/Counter';
@@ -22,16 +22,45 @@ import Counter from './component/Counter';
 // React functional hooks -> functional comp.
 // UseState()
 
+// props : property
+// they can be passed one way : parent to child
+// prop or state
+// parent child component
 function App() {
+  // let appname = 2
+  // let arr =[1,2,3]
+  console.log("app is rendering")
+
+
+  // useeffect hook is used for doing any sideeffects on our component
+  // ex : calling an api, dom : document
+//     array => when to be called
+
+
+  // useEffect(() => {
+  //   console.log("useEffect body working")
+   
+  // },[])
   
+  
+  
+  
+  
+
   return (
     // react fragment
     <>
 
       
-      <Header />
+      <Header  />
+      
+      {/* {
+        appname:"",
+        samplearr:[]
+    
+      } */}
       {/* <Subheader/> */}
-      {/* <Counter/> */}
+      <Counter  />
     </>
   );
 }

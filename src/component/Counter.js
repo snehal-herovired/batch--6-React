@@ -1,9 +1,13 @@
-import React, { useState} from 'react';
+import React, { useState,useEffect} from 'react';
 // import { useState } from 'react';
 const Counter = () => {
     //      statevaraible,statefunction
     const [counter, setCounter] = useState(0)
 
+
+
+      
+  console.log("counter is rendering")
     function increment() {
         // setCounter(counter+1)
         setCounter((prev) => {
@@ -19,7 +23,7 @@ const Counter = () => {
     }
     return (
         <div>
-            <button onClick={increment}>+</button>
+            <button className="add" onClick={increment}>+</button>
             <p>{ counter}</p>
             <button onClick={decrement}>-</button>
         </div>
